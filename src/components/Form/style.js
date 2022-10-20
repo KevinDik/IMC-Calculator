@@ -4,18 +4,18 @@ const styles = StyleSheet.create({
     formContext: {
         width: "100%",
         height: "100%",
-        bottom: 0,
+        flex: 1,
         backgroundColor: "#fff",
         alignItems: "center",
         marginTop: 30,
+        paddingTop: 30,
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
     },
     form: {
         width: "100%",
         height: "auto",
-        marginTop: 30,
-        padding: 10,
+        paddingTop: 20,
     },
     formLabel: {
         color: 'black',
@@ -34,12 +34,11 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         alignItems: "center",
         justifyContent: "center",
-        width: "90%",
+        width: "80%",
         backgroundColor: '#ff0043',
-        paddingTop: 14,
-        paddingBottom: 14,
-        marginLeft: 12,
-        marginTop: 30,
+        marginHorizontal: 30,
+        paddingHorizontal: 15,
+        paddingVertical: 5,
     },
 
     textButtonCalculator: {
@@ -52,6 +51,10 @@ const styles = StyleSheet.create({
         color: 'red',
         fontWeight: 'bold',
         paddingLeft: 20,
+    },
+    exbitionResultImc: {
+        width: "100%",
+        height: "50%",
     }
 });
 

@@ -12,18 +12,14 @@ export default function ResultImc(props) {
 
     return(
             <View style={styles.ResultImc}>
+                <Text style={styles.information}>{props.messsageResultImc}</Text>
+                <Text style={styles.numberImc}>{props.resultImc}</Text> 
                 <View style={styles.boxShareButton}>
-                    {props.resultImc != null ?
                     <TouchableOpacity style={styles.share}
                     onPress={onShare}>
                         <Text style={styles.shareText}>Share</Text>
-                    </TouchableOpacity>
-                    :
-                    <View/>
-                    }
+                    </TouchableOpacity>                    
                 </View>
-                <Text style={styles.information}>{props.messsageResultImc}</Text>
-                <Text style={styles.numberImc}>{props.resultImc}</Text> 
             </View>
         );
 }
